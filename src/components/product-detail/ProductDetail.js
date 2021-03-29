@@ -40,7 +40,7 @@ function ProductDetail() {
               <h2 className="title">{product.title}</h2>
               <h1 className="price">
                 $ {formatPrice(product.price.amount)}
-                <span className="decimals">,{product.price.decimals}</span>
+                {/* <span className="decimals">,{product.price.decimals}</span> */}
               </h1>
               <button className="button">Comprar</button>
             </div>
