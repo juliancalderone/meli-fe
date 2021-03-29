@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.searchBar {
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: $container-with;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0.75rem 0;
+        height: 40px;
+
+        .logo {
+            margin-right: 2rem;
+        }
+
+        .mlInput {
+            flex-grow: 1;
+            height: 30px;
+            font-size: 18px;
+            padding: 5px 40px 5px 10px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            font-weight: 300;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+            color: $dark;
+        }
+
+        .mlButton {
+            margin-left: -40px;
+            width: 40px;
+            height: 100%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+            outline: none;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
